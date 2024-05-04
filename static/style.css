@@ -1,0 +1,22 @@
+ .freeprivacypolicy-com---palette-light.freeprivacypolicy-com---nb {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            background-color: rgba(0, 0, 0, 0.5) !important;
+            height: 100vh;
+        }
+
+  .cc-nb-main-container {
+            position: fixed !important;
+            bottom: 0 !important;
+            background: #ddd !important;
+            width: 100% !important;
+            font-size: 18px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            justify-content: center !important;
+        }
+
+  .cc-nb-main-container button {
+            font-size: 20px !important;
+        }
