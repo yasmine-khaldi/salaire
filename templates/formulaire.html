@@ -139,17 +139,13 @@
 
     <div class="col-lg-12">
         <div class="form-group row  ">
-            <label class="col-lg-5">Ancienneté professionnelle totale <span class="text-red">*</span>
+            <label class="col-lg-5">Années de travail <span class="text-red">*</span>
 
-
-                <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Ancienneté professionnel totale" data-html="true" data-content="Saisissez un &lt;strong&gt;nombre entier pour indiquer le nombre total d’années d’expérience professionnelle&lt;/strong&gt; c’est-à-dire le nombre d’années qui séparent l&#039;année d&#039;arrivée sur le marché du travail à aujourd’hui.
-&lt;br&gt;&lt;br&gt;
-Par exemple, l&#039;année de naissance est 1995 et que l’arrivée sur le marché du travail a eu lieu à 21 ans, saisissez la différence entre l’année en cours et (1995 + 21).">
-    <i class="fas fa-info-circle"></i>
 </a>
 
             </label>
-            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55" data-dv-label="votre nombre d&#039;années d&#039;ancienneté totale" name="seniority_total" type="text">
+            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55"
+                  data-dv-label="votre nombre d&#039;années d&#039;ancienneté totale" name="seniority_total" type="text">
                             </div>
             <p class="mt-2 pt-0 mb-0">Années</p>
 
@@ -158,10 +154,10 @@ Par exemple, l&#039;année de naissance est 1995 et que l’arrivée sur le marc
 
     <div class="col-lg-12">
         <div class="form-group row  ">
-            <label class="col-lg-5">Ancienneté dans la société <span class="text-red">*</span></label>
-            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55" data-dv-label="votre nombre d&#039;années d&#039;ancienneté dans la société" name="seniority_company" type="text">
+            <label class="col-lg-5">Titre de la poste <span class="text-red">*</span></label>
+            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55"
+                                                         type="text">
                             </div>
-            <p class="mt-2 pt-0 mb-0">Années</p>
 
         </div>
     </div>
@@ -169,270 +165,94 @@ Par exemple, l&#039;année de naissance est 1995 et que l’arrivée sur le marc
 
     <div class="col-lg-12">
         <div class="form-group row  ">
-            <label class="col-lg-5">Type de contrat <span class="text-red">*</span> </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="contract_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="2">CDI</option><option value="3">CDD</option><option value="4">INTERIM</option></select>
-                            </div>
-
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">S'agit-il d'un temps partiel ? <span class="text-red">*</span> </label>
+            <label class="col-lg-5">catégorie d'emploi
+               <span class="text-red">*</span> </label>
             <div class="col-lg-7">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pr-0">
-                        <input data-target=".part-time-ratio" class="form-control mr-2 check-influence custom-check" name="is_part_time" type="radio" value="1">
-                        <label class="mt-1"> Oui </label>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pl-0">
-                        <input data-target=".part-time-ratio" class="form-control mr-2 check-influence custom-check" checked="checked" name="is_part_time" type="radio" value="0">
-                        <label class="mt-1"> Non </label>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12 is-influenced part-time-ratio-asterix">
-        <div class="form-group row ">
-            <label class="col-lg-5"><i data-fa-transform="rotate-90" class="fas mr-3 fa-level-up"></i> Si oui, nature du temps partiel <span class="text-red">*</span></label>
-            <div class="col-lg-7"><select disabled="disabled" class="form-control part-time-ratio select2-medium" name="part_time_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="1">20%</option><option value="2">30%</option><option value="3">40%</option><option value="4">50%</option><option value="5">60%</option><option value="6">70%</option><option value="7">80%</option><option value="8">90%</option></select>
-                            </div>
+                <select class="form-control select2-medium" name="contract_id">
+                <option selected="selected" value="">Séléctionnez un choix dans la liste</option>
+                <option value="2">Data Engineering</option>
+                <option value="3">Data Architecture and Modeling</option>
+                <option value="4">Data Science and Research</option>
+                    <option value="5">Machine Learning and AI</option>
+                    <option value="6">Data Analysis</option>
+                    <option value="7">Leadership and Management</option>
+                    <option value="8">BI and Visualization</option>
+                    <option value="9">Data Quality and Operations</option>
+                    <option value="10">Data Management and Strategy</option>
+                    <option value="11">Cloud and Database</option>
+            </select>
+           </div>
 
         </div>
     </div>
 
-    <div class="col-lg-12">
+
+
+
+
+
+        <div class="col-lg-12">
         <div class="form-group row  ">
-            <label class="col-lg-5">Nombre de jours de congés payés <span class="text-red">*</span>
-                <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Nombre de jours de congés payés" data-html="true" data-content="Nombre de jours de congés réels et officiels en jours ouvrés (hors RTT).">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="32" data-dv-label="le nombre de jours de congés payés" name="paid_vacation_total" type="text">
-                            </div>
-            <p class="mt-2 pt-0 mb-0">Jours</p>
+            <label class="col-lg-5">Monnaie de salaire
+               <span class="text-red">*</span> </label>
+            <div class="col-lg-7">
+                <select class="form-control select2-medium" name="contract_id">
+                <option selected="selected" value="">Séléctionnez un choix dans la liste</option>
+                <option value="2">EUR</option>
+                <option value="3">USD</option>
+                <option value="4">GBP</option>
+                    <option value="5">CAD</option>
+                    <option value="6">AUD</option>
+                    <option value="7">PLN</option>
+                    <option value="8">BRL</option>
+                    <option value="9">TRY</option>
+                    <option value="10">CHF</option>
+                    <option value="11">SGD</option>
+                    <option value="12">DKK</option>
+            </select>
+           </div>
 
         </div>
     </div>
 
 
-    <div class="col-lg-12">
+
+<div class="col-lg-12">
         <div class="form-group row  ">
-            <label class="col-lg-5">Nombre de jours de congés complémentaires (RTT, ...)
-                <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Nombre de jours de congés complémentaires (RTT, ...)" data-html="true" data-content="Nombre de jours de congés complémentaires en jours ouvrés (RTT et autres).
-                                &lt;br&gt;&lt;br&gt; La somme des deux champs doit indiquer le nombre total de jours de congés par an.">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="14" data-dv-label="le nombre de jours de congés complémentaires (RTT,...)" name="paid_compensatory_days_total" type="text">
-                            </div>
-            <p class="mt-2 pt-0 mb-0">Jours</p>
-
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group mb-0 row  ">
-            <label class="col-lg-5">Niveau d'étude <span
-                        class="text-red">*</span> <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Niveau d&amp;#039;étude" data-html="true" data-content="Précisions sur les catégories d&#039;écoles de commerce et d&#039;écoles d&#039;ingénieurs :
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Commerce A&lt;/strong&gt; : HEC, ESSEC, ESCP, EM LYON, EDHEC BS.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Commerce B &lt;/strong&gt;: SKEMA, NEOMA, GRENOBLE EM, KEDGE, IESEG, AUDENCIA.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Commerce C &lt;/strong&gt;: Autres écoles de commerce
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Ingénieur A &lt;/strong&gt;: École Polytechnique, CentraleSupélec, École des mines ParisTech, École des ponts ParisTech, Télécom Paris.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Ingénieur B&lt;/strong&gt; : ESPCI, ENSTA Paris, INSA Lyon, ISAE-SUPAERO, École centrale Lyon et Nantes, IMT Atlantique.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Ingénieur C&lt;/strong&gt; : Autres écoles d&#039;ingénieurs">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="study_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="1">AUTODIDACTE</option><option value="2">CAP / BEP</option><option value="3">BAC GENERAL ou PROFESSIONNEL</option><option value="4">BTS / DUT / DEUG</option><option value="5">LICENCE ou équivalent BAC + 3</option><option value="6">MAITRISE / MASTER 1</option><option value="7">DESS / DEA / MASTER 2</option><option value="8">DOCTORAT</option><option value="9">ECOLE DE COMMERCE A</option><option value="10">ECOLE DE COMMERCE B</option><option value="11">ECOLE DE COMMERCE C</option><option value="12">ECOLE D&#039;INGENIEUR A</option><option value="13">ECOLE D&#039;INGENIEUR B</option><option value="14">ECOLE D&#039;INGENIEUR C</option></select>
+            <label class="col-lg-5">Résidence <span class="text-red">*</span></label>
+            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55"
+                                                         type="text">
                             </div>
 
         </div>
     </div>
+
+
+
+
+
+
+<div class="col-lg-12">
+        <div class="form-group row  ">
+            <label class="col-lg-5">Niveau d'expérience
+               <span class="text-red">*</span> </label>
+            <div class="col-lg-7">
+                <select class="form-control select2-medium" name="contract_id">
+                <option selected="selected" value="">Séléctionnez un choix dans la liste</option>
+                <option value="2">Mid-level</option>
+                <option value="3">Senior</option>
+                <option value="4">Executive</option>
+                    <option value="4">Entry-level</option>
+
+           </div>
+
+        </div>
+    </div>
+
 
     <hr/>
 
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5 text-red">Votre famille d’emplois <span class="text-red">*</span> </label>
-            <div class="col-lg-7 font-weight-bold"><select class="form-control  select2-medium" data-select_class="medium" name="family_id"><option selected="selected" value="">Votre famille de métiers</option><option value="10">Achats - Logistique</option><option value="11">Assistanat - Relation clients - Services généraux</option><option value="3">Banques - Assurances</option><option value="14">Bâtiment - Travaux Publics - Construction</option><option value="9">Commerciale - Vente</option><option value="5">Conseil - Audit - Expertise</option><option value="2">Direction générale</option><option value="4">Fiscalité - Juridique</option><option value="1">Gestion - Comptabilité - Finance</option><option value="16">Hôtellerie et restauration</option><option value="15">Immobilier</option><option value="12">Informatique - Systèmes d&#039;information - Telecom</option><option value="13">Laboratoires - Pharmacie - Santé</option><option value="8">Marketing - Communication - Digital - Création</option><option value="7">Production - Recherche - Ingénieurs</option><option value="6">Ressources humaines</option></select>
-                            </div>
-
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5 text-red">Votre emploi / fonction <span class="text-red">*</span> </label>
-            <div class="col-lg-7 font-weight-bold"><select class="form-control select2-medium" name="landmark_id"><option selected="selected" value="">Votre métier</option></select>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row">
-            <label class="col-lg-5"> Intitulé exact de votre emploi / poste </label>
-            <div class="col-lg-7"><input class="form-control" name="function_exact_name" type="text"></div>
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Ancienneté dans votre emploi / fonction actuelle <span class="text-red">*</span></label>
-            <div class="col-lg-3 col-sm-10 col-6"><input class="form-control numbers-only double-validation" data-dv-max="55" data-dv-label="votre nombre d&#039;années d&#039;ancienneté dans votre emploi" name="seniority_function" type="text">
-                            </div>
-            <p class="mt-2 pt-0 mb-0">Années</p>
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Statut actuel <span
-                        class="text-red">*</span> <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Statut" data-html="true" data-content="&lt;strong&gt;CADRE SUPÉRIEUR&lt;/strong&gt; : concerne les directeurs de services et les membres du comité de direction.
-                                &lt;br&gt;&lt;br&gt; &lt;strong&gt;CADRE / INGENIEUR CONFIRMÉ&lt;/strong&gt; : concerne les chefs de services, managers ou cadres expérimentés (au moins 6 ans d&#039;expérience professionnelle).
-                                &lt;br&gt;&lt;br&gt; &lt;strong&gt;CADRE / INGÉNIEUR&lt;/strong&gt; : concerne les cadres, généralement de un à 5 ans d&#039;expérience.">
-    <i class="fas fa-info-circle"></i>
-</a>
- </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="real_status_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="9">Ouvrier</option><option value="8">Employé</option><option value="7">Technicien / Agent de maîtrise</option><option value="6">Cadre débutant</option><option value="5">Cadre confirmé</option><option value="4">Cadre supérieur</option><option value="2">Cadre dirigeant</option></select>
-                            </div>
-        </div>
-    </div>
-
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Vous êtes un(e) <span class="text-red">*</span>
-                <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Le collaborateur est un" data-html="true" data-content="&lt;strong&gt;Dirigeant&lt;/strong&gt;: concerne les mandataires sociaux, présidents, directeurs généraux, directeurs généraux adjoints, directeurs de Pays et les gérants uniquement.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Directeur&lt;/strong&gt; : concerne les directeurs de services exclusivement (ex: directeur financier, directeur marketing, directeur commercial, etc.)
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Responsable / Manager&lt;/strong&gt; : concerne les responsables autonomes sur une activité et tous les chefs d&#039;équipes avec management (encadrement hiérarchique et non fonctionnel), quelle que soit la taille de celles-ci,
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Professionnel&lt;/strong&gt; : concerne les fonctionnels ou opérationnels SANS encadrement hiérarchique.">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="title_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="4">Professionnel</option><option value="3">Responsable / Manager</option><option value="2">Directeur</option><option value="1">Dirigeant</option></select>
-                            </div>
-        </div>
-    </div>
-
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Nature de vos responsabilités <span
-                        class="text-red">*</span> <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Son type de responsabilités" data-html="true" data-content="&lt;strong&gt;Direction générale (entreprise, BU ou Pays)&lt;/strong&gt; : concerne exclusivement les présidents, les directeurs généraux, les directeurs généraux adjoints, les directeurs de pays ou de business Unit, les gérants, ... ayant une vision et des responsabilités stratégiques et globales sur la société, la BU ou le pays dont ils ont la charge.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;De direction (département, métier)&lt;/strong&gt; : concerne principalement les directeurs de département / métiers tels que le directeur des ressources humaines, de la finance, de la production, des systèmes d&#039;information, ... Dans la plupart des cas, les titulaires siègent au comité de direction.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Fonctionnelles&lt;/strong&gt; : concerne toutes les fonctions support de la l&#039;entreprise telles que le contrôle de gestion, les ressources humaines, l&#039;informatique, etc.
-                                &lt;br&gt;&lt;br&gt;&lt;strong&gt;Opérationnelles&lt;/strong&gt; : concerne traditionnellement tous les métiers qui conçoivent, fabriquent et commercialisent les biens et services de l&#039;entreprise. Cela concerne les métiers de la recherche et du développement, de la production et de la vente.">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="responsibility_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="4">Opérationnelles</option><option value="3">Fonctionnelles</option><option value="2">De direction (département, métier)</option><option value="1">De direction générale (entreprise, BU ou Pays)</option></select>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Ces responsabilités portent sur <span class="text-red">*</span> </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="responsibility_range_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="1">France seulement</option><option value="2">Etranger seulement</option><option value="3">France &amp; étranger</option></select>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Niveau d'expertise dans votre fonction actuelle <span
-                        class="text-red">*</span> <a class="text-red" data-container="body" data-toggle="popover" data-placement="top" title="Son niveau d&amp;#039;expertise dans sa fonction actuelle" data-html="true" data-content="Choisissez le niveau d&#039;expertise dans la FONCTION / LE POSTE exercé actuellement:
-                                &lt;br&gt;&lt;br&gt; EXEMPLE: si vous avez 45 ans et que vous venez de passer Directeur financier pour la première fois, saisissez DÉBUTANT (même si vous avez une longue expérience professionnelle en gestion / comptabilité d&#039;entreprise). À l&#039;inverse, si vous exercez le même métier depuis des années (au travers de différentes expériences) et que vous pensez parfaitement le maîtriser, saisissez SENIOR ou EXPERT.
-                                &lt;br&gt;&lt;br&gt; En général, pour 0 à 2 ans, on choisit DÉBUTANT, de 3 à 4 ans on choisit JUNIOR, de 5 à 10 ans on choisit CONFIRME, au-delà de 10 ans on choisit SENIOR et à partir de 20 ans, on choisit EXPERT.">
-    <i class="fas fa-info-circle"></i>
-</a>
-            </label>
-            <div class="col-lg-7"><select class="form-control select2-medium" name="skill_level_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="5">Débutant</option><option value="4">Junior</option><option value="3">Confirmé</option><option value="2">Senior</option><option value="1">Expert</option></select>
-                            </div>
-        </div>
-    </div>
-
-
-    <div class="col-lg-12 mt-1">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Encadrez-vous des personnes ? <span class="text-red">*</span> </label>
-            <div class="col-lg-7">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pr-0">
-                        <input data-target=".supervision" class="form-control mr-2 check-influence custom-check" name="is_manager" type="radio" value="1">
-                        <label class="mt-1"> Oui </label>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pl-0">
-                        <input data-target=".supervision" class="form-control mr-2 check-influence custom-check" checked="checked" name="is_manager" type="radio" value="0">
-                        <label class="mt-1"> Non </label>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12 is-influenced supervision-asterix mb-3 mt-2">
-        <div class="form-group row  ">
-            <label class="col-lg-5 pl-2">Nombre de personnes encadrées directement <span class="text-nowrap text-xlight-white">(nombre de n-1)</span> </label>
-            <div class="col-lg-7">
-                <input disabled="disabled" class="supervision form-control numbers-only double-validation" data-dv-max="20" data-dv-label="le nombre de personnes encadrées directement" name="manager_persons_direct" type="text">
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12 is-influenced supervision-asterix">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Nombre de personnes encadrées au total </label>
-            <div class="col-lg-3 col-sm-10 col-6"><select disabled="disabled" class="form-control supervision select2-medium" name="employee_in_charge_id"><option selected="selected" value="">Séléctionnez un choix dans la liste</option><option value="2">1 à 3</option><option value="3">4 à 9</option><option value="4">10 à 15</option><option value="5">16 à 25</option><option value="6">26 à 40</option><option value="7">41 à 80</option><option value="8">80 à 150</option><option value="9">&gt; 150</option></select>
-                            </div>
-            <p class="mt-2 pt-1">Personne(s)</p>
-        </div>
-    </div>
-
-    <div class="col-lg-12 mt-2">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Faites-vous partie du Comité de direction (CODIR) exécutif restreint (COMEX) ? <span class="text-red">*</span></label>
-            <div class="col-lg-7">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pr-0">
-                        <input data-target=".is_officer" class="form-control mr-2 check-influence custom-check" name="is_codir" type="radio" value="1">
-                        <label class="mt-1"> Oui </label>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pl-0">
-                        <input data-target=".is_officer" class="form-control mr-2  check-influence custom-check" checked="checked" name="is_codir" type="radio" value="0">
-                        <label class="mt-1"> Non </label>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
-
-    <div class="col-lg-12 mt-2 is-influenced is_officer-asterix">
-        <div class="form-group row  ">
-            <label class="col-lg-5">Est-il mandataire social ? <span class="text-red">*</span></label>
-            <div class="col-lg-7">
-                <div class="row">
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pr-0">
-                        <input disabled="disabled" class="form-control is_officer mr-2 custom-check" name="is_officer" type="radio" value="1">
-                        <label class="mt-1"> Oui </label>
-                    </div>
-
-                    <div class="col-xl-3 col-lg-3 col-sm-6 col-6 pl-0">
-                        <input disabled="disabled" class="form-control is_officer mr-2  custom-check" checked="checked" name="is_officer" type="radio" value="0">
-                        <label class="mt-1"> Non </label>
-                    </div>
-                </div>
-                            </div>
-        </div>
-    </div>
-
-            <div class="col-lg-12">
+      <div class="col-lg-12">
             <button class="btn btn-xlarge w-100 mt-3 btn-red">Simuler <i data-fa-transform="grow-8" class="fas ml-2 fa-angle-right"></i></button>
         </div>
     

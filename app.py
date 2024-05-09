@@ -10,5 +10,8 @@ def hello_world():  # put application's code here
 def formulaire():
     return render_template('formulaire.html')
 
+
+
+
 if __name__ == '__main__':
     app.run(debug=True)
